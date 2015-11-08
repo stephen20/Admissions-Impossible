@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = 'http://148.100.164.37:8888/projects/Admissions-Impossible/';
+$config['base_url'] = 'localhost/ai/';
 
 /*
 |--------------------------------------------------------------------------
@@ -29,7 +29,7 @@ $config['base_url'] = 'http://148.100.164.37:8888/projects/Admissions-Impossible
 | variable so that it is blank.
 |
 */
-$config['index_page'] = "";
+$config['index_page'] = 'index.php';
 
 /*
 |--------------------------------------------------------------------------
