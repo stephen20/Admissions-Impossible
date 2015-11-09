@@ -115,7 +115,7 @@ body {
   text-align: center;
 }
 
-@media(min-width: 768px){
+@media(min-width: 768px) {
   .mobile-navbar {
     display: none;
   }

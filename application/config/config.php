@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = 'http://148.100.164.37:8888/projects/Admissions-Impossible/';
+$config['base_url'] = 'http://192.168.0.6:8888/projects/Admissions-Impossible/';
 
 /*
 |--------------------------------------------------------------------------

@@ -77,12 +77,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<code>application/views/welcome_message.php</code>
 
 		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/Welcome.php</code>
+		<code>application/controllers/ai.php</code>
 
 		<button id="myButton" class="float-left submit-button" >Login</button>
 
 		<script type="text/javascript">
-			var loc = "<?php echo base_url(); ?>?c=welcome&m=login";
+			var loc = "<?php echo base_url(); ?>?c=course_comparison&m=Display";
 			document.getElementById("myButton").onclick = function () {
 				location.href = loc;
 			};
