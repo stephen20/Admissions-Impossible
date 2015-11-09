@@ -21,7 +21,8 @@ class db_model extends CI_Model{
     function getCourseNums($department){
         $sql = $this->db->select('course_num')
             ->from('school_courses')
-            ->where('school_id = 1 AND department =' . "'".$department."'");
+            ->where('school_id = 1 AND department =' . "'".$department."'")
+            ->order_by("course_num ASC");
         //$query = $this->db->get();
         $return['rows'] = $sql->get()->result_array();
         $return = (json_encode($return));

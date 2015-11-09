@@ -199,12 +199,14 @@
             function(data) {
                 $("select#courseNum"+ id[1]).empty();
                 var options= '<option>Course Number</option>';
-               var json = (JSON.parse(data));
+                var json = (JSON.parse(data));
                 for (var i = 0; i < json.rows.length; i++) {
                     var courseNum = json.rows[i].course_num.valueOf();
-                     options += '<option value="' + courseNum + '">' + json.rows[i].course_num.valueOf() + '</option>';
+                    options += '<option value="' + courseNum + '">' + json.rows[i].course_num.valueOf() + '</option>';
                 }
                 $("select#courseNum"+id[1]).html(options);
+                $("#matchedMaristCourse"+id[1]).empty();
+
             }
         );
     });
@@ -265,9 +267,6 @@
         var elements = departments.item(0);
         console.log(elements);
     }
-
-
-
 </script>
 
 
