@@ -1,7 +1,7 @@
 <?php
 class ai extends CI_Controller {
 	public function index() {
-		$this -> load -> view('login_view');
+		$this -> load -> view('log_in');
 	}
 	//loads admin page
 	public function admin(){
@@ -14,11 +14,12 @@ class ai extends CI_Controller {
 		$courseNameM = $_POST['courseNameM'];
 		$departmentM = $_POST['departmentM'];
 		$mData = array(
+					'course_id' => 0,
+					'department' => $departmentM,
 					'course_num' => $courseNumM,
-					'course_name' => $courseNameM,
-					'department' => $departmentM
+					'course_name' => $courseNameM
 				);
-		$result = $this->ai_model->insert_course('marist_courses', $mData);
+		$result = $this->ai_model->insert_course($mData, 'marist_courses');
 		echo $result;
 	}
 	//add non marist course
@@ -46,7 +47,7 @@ class ai extends CI_Controller {
 					'course_num' => $courseNumNM,
 					'course_name' => $courseNameNM
 				);
-		$result = $this->ai_model->insert_course('school_courses', $data);
+		$result = $this->ai_model->insert_course($data, 'school_courses');
 		echo $result;
 	}
 	//adding transfer link
@@ -60,7 +61,7 @@ class ai extends CI_Controller {
 					'school_course' => $nMCourseId,
 					'marist_course' => $mCourseId
 				);
-		$result = $this->ai_model->insert_transfer('transferrable_courses', $data);
+		$result = $this->ai_model->insert_transfer($data, 'transferrable_courses');
 		echo $result;
 	}
 }

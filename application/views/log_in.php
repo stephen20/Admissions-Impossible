@@ -11,7 +11,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Admissions Impossible</title>
+    <title>Admissions</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
@@ -59,15 +59,15 @@
     <center><input type="password" class="form-control loginPassword" id="username" placeholder="Password"
                    aria-describedby="sizing-addon2"></center>
     <center>
-        <button type="button" id="studentlogin" class="btn btn-default">Student Log In</button>
+        <a href="?c=course_comparison&m=Display"><button type="button" id="studentlogin" class="btn btn-default">Student Log In</button></a>
     </center>
     <center>
-        <button type="button" id="adminlogin" class="btn btn-default">Admin Log In</button>
+        <a href="?c=ai&m=admin"><button type="button" id="adminlogin" class="btn btn-default">Admin Log In</button></a>
     </center>
     </div>
 <div>
     <center>
-        <button type="button" id="guestlogin" class="btn btn-default">Log In As Guest</button>
+        <a href="?c=course_comparison&m=Display"><button type="button" id="guestlogin" class="btn btn-default">Log In As Guest</button></a>
     </center>
 </div>
 </body>
@@ -79,14 +79,21 @@
         location.href = loc;
     };
 
-    var loc2 = "<?php echo base_url(); ?>?c=ai&m=adminHome";
+    var loc2 = "<?php echo base_url(); ?>?c=ai&m=admin";
     document.getElementById("adminlogin").onclick = function () {
+        console.log(loc2);
         location.href = loc2;
     };
 
-    var loc3 = "<?php echo base_url(); ?>?c=course_comparison&m=Display";
+
     document.getElementById("guestlogin").onclick = function () {
         location.href = loc3;
     };
+
+    $("#adminlogin").on("click",function(){
+        var loc3 = "<?php echo base_url(); ?>?c=course_comparison&m=Display";
+        location.href = loc3;
+        console.log("hello click");
+    }
 
 </script>
