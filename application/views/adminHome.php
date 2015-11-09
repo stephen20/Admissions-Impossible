@@ -2,8 +2,8 @@
 /**
  * Created by IntelliJ IDEA.
  * User: thomas
- * Date: 10/30/2015
- * Time: 10:21 AM
+ * Date: 11/9/2015
+ * Time: 9:58 AM
  */
 ?>
 <!DOCTYPE html>
@@ -46,47 +46,12 @@
                 <button align="right" type="submit" class="btn btn-default" id="search-button">Submit</button>
             </form>
         </div>
-        <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container-fluid -->
 </nav>
-<h1>
-    <center>Log In</center>
-</h1>
-<div class="input-class">
-    <center><input type="text" class="form-control loginUsername" id="username" placeholder="Username/E-mail"
-                   aria-describedby="sizing-addon2"></center>
-    <center><input type="password" class="form-control loginPassword" id="username" placeholder="Password"
-                   aria-describedby="sizing-addon2"></center>
-    <center>
-        <button type="button" id="studentlogin" class="btn btn-default">Student Log In</button>
-    </center>
-    <center>
-        <button type="button" id="adminlogin" class="btn btn-default">Admin Log In</button>
-    </center>
-    </div>
-<div>
-    <center>
-        <button type="button" id="guestlogin" class="btn btn-default">Log In As Guest</button>
-    </center>
-</div>
+    <h1 align="center"> Welcome to the Admin Home Page </h1>
+    <p align="center"> Do Something </p>
 </body>
 </HTML>
 
 <script type="text/javascript">
-    var loc = "<?php echo base_url(); ?>?c=course_comparison&m=Display";
-    document.getElementById("studentlogin").onclick = function () {
-        location.href = loc;
-    };
-
-    var loc2 = "<?php echo base_url(); ?>?c=ai&m=adminHome";
-    document.getElementById("adminlogin").onclick = function () {
-        location.href = loc2;
-    };
-
-    var loc3 = "<?php echo base_url(); ?>?c=course_comparison&m=Display";
-    document.getElementById("guestlogin").onclick = function () {
-        location.href = loc3;
-    };
-
 </script>

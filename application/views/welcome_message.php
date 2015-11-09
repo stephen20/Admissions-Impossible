@@ -82,7 +82,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<button id="myButton" class="float-left submit-button" >Login</button>
 
 		<script type="text/javascript">
-			var loc = "<?php echo base_url(); ?>?c=course_comparison&m=Display";
+			//var loc = "<?php echo base_url(); ?>?c=course_comparison&m=Display";
+			var loc = "<?php echo base_url(); ?>?c=ai&m=login";
 			document.getElementById("myButton").onclick = function () {
 				location.href = loc;
 			};

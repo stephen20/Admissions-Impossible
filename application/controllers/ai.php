@@ -25,7 +25,13 @@ class ai extends CI_Controller {
 	}
 
 	public function login(){
+		$this->load->helper('url');
 		$this->load->view('log_in');
+	}
+
+	public function adminHome(){
+		$this->load->helper('url');
+		$this->load->view('adminHome');
 	}
 
 	public function viewCourseComparison(){
