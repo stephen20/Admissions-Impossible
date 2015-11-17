@@ -175,7 +175,7 @@
 
 <script type="text/javascript">
     $(document).ready(function() {
-        console.log("ready");
+//        console.log("ready");
         $.post(
             '?c=course_comparison&m=getDepartments',
             function (data) {

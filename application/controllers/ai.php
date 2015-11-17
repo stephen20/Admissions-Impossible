@@ -3,10 +3,16 @@ class ai extends CI_Controller {
 	public function index() {
 		$this -> load -> view('log_in');
 	}
+
 	//loads admin page
 	public function admin(){
 		$this -> load -> view('admin_view');
 	}
+
+	public function navTest(){
+		$this -> load -> view('sideNavTest');
+	}
+
 	//add marist course
 	public function addM(){
 		$this -> load -> model('ai_model');

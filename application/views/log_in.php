@@ -11,7 +11,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Admissions</title>
+    <title>A I</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
@@ -62,36 +62,36 @@
         <a href="?c=course_comparison&m=Display"><button type="button" id="studentlogin" class="btn btn-default">Student Log In</button></a>
     </center>
     <center>
-        <a href="?c=ai&m=admin"><button type="button" id="adminlogin" class="btn btn-default">Admin Log In</button></a>
+        <a href="?c=ai&m=navTest"><button type="button" id="adminlogin" class="btn btn-default">Admin Log In</button></a href="?c=ai&m=navTest">
     </center>
     </div>
 <div>
     <center>
-        <a href="?c=course_comparison&m=Display"><button type="button" id="guestlogin" class="btn btn-default">Log In As Guest</button></a>
+        <a href="?c=course_comparison&m=Display"><button type="button" id="guestlogin" class="btn btn-default">Log In As Guest</button></a href="?c=course_comparison&m=Display">
     </center>
 </div>
 </body>
 </HTML>
 
 <script type="text/javascript">
-    var loc = "<?php echo base_url(); ?>?c=course_comparison&m=Display";
-    document.getElementById("studentlogin").onclick = function () {
-        location.href = loc;
-    };
+//    var loc = "<?php //echo base_url(); ?>//?c=ai&m=admin";
+//    console.log(loc);
+//    document.getElementById("studentlogin").onclick = function () {
+//        location.href = loc;
+//    };
 
-    var loc2 = "<?php echo base_url(); ?>?c=ai&m=admin";
-    document.getElementById("adminlogin").onclick = function () {
+        var loc2 = "<?php echo base_url(); ?> ?c=ai&m=navTest";
+        document.getElementById("adminlogin").onclick = function () {
         console.log(loc2);
         location.href = loc2;
     };
 
-
-    document.getElementById("guestlogin").onclick = function () {
-        location.href = loc3;
-    };
+//    document.getElementById("guestlogin").onclick = function () {
+//        location.href = loc3;
+//    };
 
     $("#adminlogin").on("click",function(){
-        var loc3 = "<?php echo base_url(); ?>?c=course_comparison&m=Display";
+        var loc3 = "<?php echo base_url(); ?>?c=ai&m=navTest";
         location.href = loc3;
         console.log("hello click");
     }
