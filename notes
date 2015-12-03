@@ -1,0 +1,27 @@
+Software Testing Notes
+
+-
+
+
+8 Courses to Match
+
+test
+-1 case one course wont transfer to marist
+-1 case where one course matches a single course
+-1 case where one class matches multiple marist courses
+
+Admin
+-Adding to Catalog both Marist and Courses
+-Editing Courses in catalog
+        -Enable/Disable Courses
+
+1) Add shit to database                 - Juan
+2)Splash/Home Page
+    - Login/Guest
+    - Links To All Other Pages
+
+3) Edit/Enable/Disable Courses          - Steven
+4) Compare Courses
+    -Updating factor
+    -Enable/Disabled
+

@@ -77,13 +77,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<code>application/views/welcome_message.php</code>
 
 		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/Welcome.php</code>
+		<code>application/controllers/ai.php</code>
 
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
+		<button id="myButton" class="float-left submit-button" >Login</button>
+
+		<script type="text/javascript">
+			//var loc = "<?php echo base_url(); ?>?c=course_comparison&m=Display";
+			var loc = "<?php echo base_url(); ?>?c=ai&m=login";
+			document.getElementById("myButton").onclick = function () {
+				location.href = loc;
+			};
+		</script>
 	</div>
 
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
-</div>
 
 </body>
 </html>
