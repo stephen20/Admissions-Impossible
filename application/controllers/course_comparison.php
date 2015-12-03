@@ -12,6 +12,10 @@ class course_comparison extends CI_Controller{
         $this->load->view('course_comparison');
     }
 
+    function displayStudent(){
+        $this->load->view('student_course_comparison');
+    }
+
     function getCourses()
     {
         $this->load->model('db_model');

@@ -11,13 +11,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>A I</title>
+    <title>AI</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
     <link rel="stylesheet" type="text/css" href="css/customStyles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 </head>
 
 <body>
@@ -37,14 +38,11 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="main.html">Home</a></li>
+                <li><a id="navHomeBtn">Home</a></li>
             </ul>
-            <form class="navbar-form navbar-right" role="search">
-                <div class="form-group">
-                    <input align="right" type="text" class="form-control" placeholder="Search" id="new_search">
-                </div>
-                <button align="right" type="submit" class="btn btn-default" id="search-button">Submit</button>
-            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a id="navRegisterBtn">Register</a></li>
+            </ul>
         </div>
         <!-- /.navbar-collapse -->
     </div>
@@ -58,42 +56,46 @@
                    aria-describedby="sizing-addon2"></center>
     <center><input type="password" class="form-control loginPassword" id="username" placeholder="Password"
                    aria-describedby="sizing-addon2"></center>
-    <center>
-        <a href="?c=course_comparison&m=Display"><button type="button" id="studentlogin" class="btn btn-default">Student Log In</button></a>
-    </center>
-    <center>
-        <a href="?c=ai&m=navTest"><button type="button" id="adminlogin" class="btn btn-default">Admin Log In</button></a href="?c=ai&m=navTest">
-    </center>
+    <div class="btn-group-wrap">
+        <div class="btn-group-vertical">
+            <a><button type="button" id="studentlogin" class="btn btn-default">Student Log In</button></a>
+            <a><button type="button" id="adminlogin" class="btn btn-default">Admin Log In</button></a>
+            <a><button type="button" id="guestlogin" class="btn btn-default">Log In As Guest</button></a>
+        </div>
     </div>
-<div>
-    <center>
-        <a href="?c=course_comparison&m=Display"><button type="button" id="guestlogin" class="btn btn-default">Log In As Guest</button></a href="?c=course_comparison&m=Display">
-    </center>
+
 </div>
 </body>
-</HTML>
-
 <script type="text/javascript">
-//    var loc = "<?php //echo base_url(); ?>//?c=ai&m=admin";
-//    console.log(loc);
-//    document.getElementById("studentlogin").onclick = function () {
-//        location.href = loc;
-//    };
+    var base = "<?php echo $this->config->base_url()?>";
+//    Nav Bar Links
+    $("#navHomeBtn").on("click",function(){
+        loc = base + "?c=student_profile&m=studentHome";
+        location.href = loc;
+    });
 
-        var loc2 = "<?php echo base_url(); ?> ?c=ai&m=navTest";
-        document.getElementById("adminlogin").onclick = function () {
-        console.log(loc2);
-        location.href = loc2;
-    };
+    $("#navRegisterBtn").on("click",function(){
+        loc = base + "?c=student_profile&m=registerStudent";
+        location.href = loc;
+        console.log("Clicking")
+    });
 
-//    document.getElementById("guestlogin").onclick = function () {
-//        location.href = loc3;
-//    };
+//    Other Functions
+    console.log(base);
+    $("#studentlogin").on("click",function(){
+        loc = base + "?c=student_profile&m=studentHome";
+        location.href = loc;
+    });
 
     $("#adminlogin").on("click",function(){
-        var loc3 = "<?php echo base_url(); ?>?c=ai&m=navTest";
-        location.href = loc3;
-        console.log("hello click");
-    }
+        loc = base + "?c=ai&m=admin";
+        location.href = loc;
+    });
+
+    $("#guestlogin").on("click",function(){
+        loc = base + "?c=course_comparison&m=display";
+        location.href = loc;
+    });
 
 </script>
+</HTML>

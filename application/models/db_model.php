@@ -55,8 +55,27 @@ class db_model extends CI_Model{
         }
     }
 
-//
-//        foreach ($course as $course_id)
-//        {
-//            $id = $courseid->$course_id;
+    function getStudentInfo($student_id){
+        $query = $this->db -> distinct()
+            ->select('student_id, student_email, first_name, last_name')
+            ->from('students')
+            ->where('student_id = 1');
+        $return['rows'] = $query->get()->result();
+        $return = (json_encode($return));
+        print_r($return);
+        return $return;
+    }
+
+    function updateStudentInfo($student_id){
+    }
+
+    function addNewStudent(){
+        $sql = "INSERT INTO mytable (title, name)
+        VALUES (".$this->db->escape($title).", ".$this->db->escape($name).")";
+
+        $return['rows'] = $query->get()->result();
+        $return = (json_encode($return));
+        print_r($return);
+        return $return;
+    }
 }

@@ -6,11 +6,11 @@ class ai extends CI_Controller {
 
 	//loads admin page
 	public function admin(){
-		$this -> load -> view('admin_view');
+		$this -> load -> view('adminHome');
 	}
 
 	public function navTest(){
-		$this -> load -> view('sideNavTest');
+		$this -> load -> view('navTest');
 	}
 
 	//add marist course

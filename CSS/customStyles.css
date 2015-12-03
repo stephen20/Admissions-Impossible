@@ -115,8 +115,27 @@ body {
   text-align: center;
 }
 
+#courseComparisonContent{
+  padding-left: 250px;
+}
+
 @media(min-width: 768px) {
   .mobile-navbar {
     display: none;
   }
+}
+
+#newStudentTable{
+  width: 50%;
+  margin: 0 auto;
+}
+#newStudentTableLbl{
+   width: 20%;
+  text-align: left;
+ }
+#newStudentTableInput{
+  width: auto;
+}
+#newStudentTableInput input{
+  width: 100%;
 }
