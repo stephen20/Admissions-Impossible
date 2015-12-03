@@ -1,9 +1,15 @@
 <?php
+<<<<<<< HEAD
 class ai_model extends CI_Model
 {
 
 	function __construct()
 	{
+=======
+class ai_model extends CI_Model {
+
+	function __construct() {
+>>>>>>> origin/master
 		// Call the Model constructor
 		parent::__construct();
 		// $this->load->database();
