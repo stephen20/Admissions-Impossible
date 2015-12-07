@@ -13,7 +13,7 @@ class course_comparison extends CI_Controller{
     }
 
     function displayStudent(){
-        $this->load->view('student_course_comparison');
+        $this -> load -> view('student_course_comparison');
     }
 
     function getCourses()
@@ -26,7 +26,7 @@ class course_comparison extends CI_Controller{
 
     function getMatchedCourse(){
             $this->load->model('db_model');
-            $result = $this->db_model->getMatchedCourses(($_POST['dept']),($_POST['courseNum']));
+            $result = $this->db_model->getMatchedCourses($_POST['dept'], $_POST['courseNum']);
             //$matchedCourses['courses'] = $result;
     }
 

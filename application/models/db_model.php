@@ -11,7 +11,7 @@ class db_model extends CI_Model{
         $query = $this->db -> distinct()
                             ->select('department')
                             ->from('school_courses')
-                            ->where('school_id = 1');
+                            ->where('school_id = 1')->order_by('department ASC');
         $return['rows'] = $query->get()->result();
         $return = (json_encode($return));
         print_r($return);
@@ -31,16 +31,16 @@ class db_model extends CI_Model{
     }
 
     function getMatchedCourses($department, $courseNum){
-        $sqlstmt = $this->db->select('course_id')
+        $sqlstmt = $this->db->select('cId')
                             ->from('school_courses')
-                            ->where('school_id = 1 AND department= "' . $department . '" AND course_num=' . $courseNum);
+                            ->where('school_id = 1 AND department= "' . $department . '" AND course_num="' . $courseNum . '"');
 
         foreach ($sqlstmt->get()->result('object') as $course_id)
         {
-            $id = ($course_id->course_id);
-            $sql = $this->db->select('course_id, department, course_num, course_name')
+            $id = ($course_id->cId);
+            $sql = $this->db->select('mId, department, course_num, course_name')
                 ->from('marist_courses, transferrable_courses')
-                ->where('marist_courses.course_id = transferrable_courses.marist_course AND
+                ->where('marist_courses.mId = transferrable_courses.marist_course AND
                         transferrable_courses.school_course = ' . $id);
 
             if ($this->db->affected_rows()> 0)

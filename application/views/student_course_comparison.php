@@ -102,7 +102,7 @@
                         echo '</select>';
                         ?>
                     </td>
-                    <td id = matchedMaristCourse1></td>
+                    <td id='matchedMaristCourse1'></td>
                 </tr>
                 <tr>
                 <tr>
@@ -115,7 +115,7 @@
                         echo '</select>';
                         ?>
                     </td>
-                    <td id = matchedMaristCourse2></td>
+                    <td id='matchedMaristCourse2'></td>
                 </tr>
                 <tr>
                 <tr>
@@ -128,7 +128,7 @@
                         echo '</select>';
                         ?>
                     </td>
-                    <td id = matchedMaristCourse3></td>
+                    <td id='matchedMaristCourse3'></td>
                 </tr>
                 <tr>
                 <tr>
@@ -142,7 +142,7 @@
                         echo '</select>';
                         ?>
                     </td>
-                    <td id = matchedMaristCourse4></td>
+                    <td id='matchedMaristCourse4'></td>
                 </tr>
                 <tr>
                 <tr>
@@ -156,7 +156,7 @@
                         echo '</select>';
                         ?>
                     </td>
-                    <td id = matchedMaristCourse5></td>
+                    <td id='matchedMaristCourse5'></td>
                 </tr>
                 <tr>
                 <tr>
@@ -170,7 +170,7 @@
                         echo '</select>';
                         ?>
                     </td>
-                    <td id = matchedMaristCourse6></td>
+                    <td id='matchedMaristCourse6'></td>
                 </tr>
                 <tr>
                 <tr>
@@ -180,11 +180,10 @@
                     <td>
                         <?php
                         echo '<select class="courseNum" id="courseNum7">';
-
                         echo '</select>';
                         ?>
                     </td>
-                    <td id = matchedMaristCourse7></td>
+                    <td id='matchedMaristCourse7'></td>
                 </tr>
                 <tr>
                 <tr>
@@ -197,7 +196,7 @@
                         echo '</select>';
                         ?>
                     </td>
-                    <td id = matchedMaristCourse8></td>
+                    <td id='matchedMaristCourse8'></td>
                 </tr>
                 </tbody>
             </table>
@@ -286,6 +285,7 @@
     $(".courseNum").on("change",function(){
         var str= $(this).attr('id');
         var id = str.split("courseNum");
+        console.log(id);
         var dep = $('#department'+id[1]).find(":selected").text();
         $.post(
             '?c=course_comparison&m=getMatchedCourse',
