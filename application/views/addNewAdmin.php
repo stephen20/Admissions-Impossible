@@ -133,7 +133,7 @@
                 <td>
                 </td>
                 <td>
-                    <input type="submit" value= "Add New Admin" class="btn btn-default">
+                    <input id="registerBtn" type="submit" value="Add New Admin" class="btn btn-default">
                 </td>
             </tr>
             </tbody>
