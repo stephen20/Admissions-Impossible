@@ -97,7 +97,8 @@
                     <label>  School Name: </label>
                 </td>
                 <td id="newStudentTableInput">
-                    <input type='text' name='schoolName' id='schoolName'>
+                    <select id="schools" style="width: 100%"></select>
+<!--                    <input type='text' name='schoolName' id='schoolName'>-->
                 </td>
             </tr>
             <tr>
@@ -105,7 +106,8 @@
                     <label>  School State: </label>
                 </td>
                 <td id="newStudentTableInput">
-                    <input type='text' name='schoolState' id='schoolState'>
+<!--                    <input type='text' name='schoolState' id='schoolState'>-->
+                    <select id="states"  style="width: 100%;"></select>
                 </td>
             </tr>
             <tr>
@@ -139,9 +141,55 @@
 </div>
 </body>
 <script type="text/javascript">
+
+    var state_id;
+    var school_id = 1;
+
+    $(document).ready(function() {
+//        console.log("ready");
+        $.post(
+            '?c=ai&m=getStates',
+            function (data) {
+                $("#states").empty();
+                var options = '<option>Select State</option>';
+                var json = (JSON.parse(data));
+                for (var i = 0; i < json.rows.length; i++) {
+                    var dept = json.rows[i].state_name.valueOf();
+                    options += '<option value="' + dept + '">' + json.rows[i].state_name.valueOf() + '</option>';
+                }
+                $("select#states").html(options)
+            });
+        $.post(
+            '?c=ai&m=getSchools',
+            function (data) {
+                $("#schools").empty();
+                var options = '<option>Select School</option>';
+                var json = (JSON.parse(data));
+                for (var i = 0; i < json.rows.length; i++) {
+                    var dept = json.rows[i].school_name.valueOf();
+                    options += '<option value="' + dept + '">' + json.rows[i].school_name.valueOf() + '</option>';
+                }
+                $("select#schools").html(options)
+            });
+    });
+
+    $('#states').on('change', function () {
+        $.post(
+            '?c=ai&m=getStatesID',
+            {'state_name': $(this).val()},
+            function (data) {
+                var json = (JSON.parse(data));
+                for (var i = 0; i < json.rows.length; i++) {
+                   state_id = json.rows[i].stateid.valueOf();
+                }
+            });
+    });
+
+
     $('#addNM').click(function(){
-        var schoolName = $('input#schoolName').val();
-        var schoolState = $('input#schoolState').val();
+        var schoolName = $('select#schools').val();
+        var schoolState = $('select#states').val();
+        console.log(schoolState, state_id);
         var courseNumNM = $('input#courseNumNM').val();
         var courseNameNM = $('input#courseNameNM').val();
         var departmentNM = $('input#departmentNM').val();
@@ -161,7 +209,7 @@
             window.alert("You must enter a department name to add a Class!");
         }
         else{
-            $.post("?c=ai&m=addNM",{schoolName: schoolName, schoolState: schoolState, courseNumNM: courseNumNM, courseNameNM: courseNameNM, departmentNM: departmentNM}).done(function(data){
+            $.post("?c=ai&m=addNM",{schoolName: schoolName, schoolState: schoolState, courseNumNM: courseNumNM, courseNameNM: courseNameNM, departmentNM: departmentNM, stateID: state_id, schoolID:school_id}).done(function(data){
                 if (data == 1){
                     alert("Course added successfully");
                     location.reload();
@@ -203,4 +251,8 @@
         loc = base;
         location.href = loc;
     });
+</script>
+
+<script>
+
 </script>

@@ -105,6 +105,28 @@ class ai extends CI_Controller {
         redirect();
 	}
 
+	public function getStates(){
+		$this->load->model('db_model');
+
+		$result = $this->db_model->getStates();
+		$departmentData['state_name'] = $result;
+	}
+
+	public function getStatesID(){
+		$this->load->model('ai_model');
+		$state_name = $_POST['state_name'];
+
+		$result = $this->ai_model->getstateid($state_name);
+		$departmentData['state_name'] = $result;
+	}
+
+	public function getSchools(){
+		$this->load->model('db_model');
+
+		$result = $this->db_model->getSchools();
+		$departmentData['school_name'] = $result;
+	}
+
 	//add marist course
 	public function addM(){
 		$this -> load -> model('ai_model');
@@ -112,10 +134,11 @@ class ai extends CI_Controller {
 		$courseNameM = $_POST['courseNameM'];
 		$departmentM = $_POST['departmentM'];
 		$mData = array(
-					'course_id' => 0,
+					'mid' => 382,
 					'department' => $departmentM,
 					'course_num' => $courseNumM,
-					'course_name' => $courseNameM
+					'course_name' => $courseNameM,
+					'active' => 1
 				);
 		$result = $this->ai_model->insert_course($mData, 'marist_courses');
 		echo $result;
@@ -128,19 +151,11 @@ class ai extends CI_Controller {
 		$courseNumNM = $_POST['courseNumNM'];
 		$courseNameNM = $_POST['courseNameNM'];
 		$departmentNM = $_POST['departmentNM'];
-		$schoolid = $this->ai_model->getschoolid($schoolName);
-		if($this->ai_model->getschool($schoolName)){
-			//$dataS['schoolName'] = $schoolName;
-			//$dataS['schoolState'] = $schoolState;
-			$stateId = $this->ai_model->getstateid($schoolState);
-			$dataS = array(
-						'school_name' => $schoolName,
-						'school_state' => $stateId
-					); 
-			$this->ai_model->insert_school($dataS); 
-		}
+		$stateID= $_POST['stateID'];
+		$schoolID= $_POST['schoolID'];
+
 		$data = array(
-					'school_id' => $schoolid,
+					'school_id' => 1,
 					'department' => $departmentNM,
 					'course_num' => $courseNumNM,
 					'course_name' => $courseNameNM
@@ -163,4 +178,3 @@ class ai extends CI_Controller {
 		echo $result;
 	}
 }
-?>

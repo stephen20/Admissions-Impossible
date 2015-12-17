@@ -48,7 +48,7 @@ class ai_model extends CI_Model
 	//get school id for adding non marist course
 	public function getschoolid($school)
 	{
-		$sql = "SELECT school_id FROM schools WHERE school_name = '$school';";
+		$sql = "SELECT school_id FROM schools WHERE school_name = '$school'";
 		$results = $this->db->query($sql, array($school));
 		return $results;
 	}
@@ -70,11 +70,15 @@ class ai_model extends CI_Model
 	}
 
 	//get state id for adding school
-	public function getstateid($state)
-	{
-		$sql = "SELECT state_id FROM states WHERE state_name = '$state';";
-		$results = $this->db->query($sql, array($state));
-		return $results;
+	public function getstateid($state_name)
+	{$sql = $this->db->select('stateid')
+		->from('states')
+		->where('state_name = ' ."'".$state_name."'")
+		->order_by("stateid ASC");
+		$return['rows'] = $sql->get()->result_array();
+		$return = (json_encode($return));
+		print_r($return);
+		return $return;
 	}
 }
 	

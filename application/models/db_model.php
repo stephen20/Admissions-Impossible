@@ -209,6 +209,27 @@ class db_model extends CI_Model{
         $studentResult = $this -> db -> query($studentSql);
     }
 
+    function getStates(){
+        $sql = $this->db->select('state_name')
+            ->from('states')
+            ->order_by("state_name ASC");
+        //$query = $this->db->get();
+        $return['rows'] = $sql->get()->result_array();
+        $return = (json_encode($return));
+        print_r($return);
+        return $return;
+    }
+
+    function getSchools(){
+        $sql = $this->db->select('school_name')
+            ->from('schools')
+            ->order_by("school_name ASC");
+        //$query = $this->db->get();
+        $return['rows'] = $sql->get()->result_array();
+        $return = (json_encode($return));
+        print_r($return);
+        return $return;
+    }
     //END : Juan
 }
 ?>
