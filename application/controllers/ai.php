@@ -6,11 +6,103 @@ class ai extends CI_Controller {
 
 	//loads admin page
 	public function admin(){
-		$this -> load -> view('adminHome');
+		session_start();
+        $this -> load -> model('db_model');
+
+		$isUser = false;
+
+		if(isset($_POST['user'])){
+			$user = $_POST['user'];
+            $password = hash('sha512', $_POST['password']);
+
+        	$isUser = $this -> db_model -> isUser($user, $password);
+        }
+        else{
+            if(isset($_SESSION['admin'])){
+                $this -> load -> view('adminHome');
+                return;
+            }
+            else{
+                $data['err'] = 'Please Log In';
+                $this -> load -> view('log_in', $data);
+                return;
+            }
+        }
+
+        if($isUser === false){
+            $data['err'] = 'Invalid Login';
+            $this -> load -> view('log_in', $data);
+        }
+        else{
+            $admin = $this -> db_model -> admin($isUser[0] -> email);
+        
+            $_SESSION['email'] = $isUser[0] -> email;
+            $_SESSION['username'] = $isUser[0] -> username;
+            $_SESSION['password'] = $isUser[0]-> password;
+            $_SESSION['first_name'] = $admin[0] -> first_name;
+            $_SESSION['last_name'] = $admin[0] -> last_name;
+            $_SESSION['admin'] = true;
+
+			$this -> load -> view('adminHome');
+		}
 	}
 
 	public function navTest(){
 		$this -> load -> view('navTest');
+	}
+
+	public function addMCourse(){
+		session_start();
+		if(isset($_SESSION['admin'])){
+			$this->load->view('addMCourse');
+		}
+		else{
+			$data['err'] = 'Please Log In as Admin';
+            $this -> load -> view('log_in', $data);
+		}
+	}
+
+	public function addNMCourse(){
+		session_start();
+		if(isset($_SESSION['admin'])){
+			$this->load->view('addNMCourse');
+		}
+		else{
+			$data['err'] = 'Please Log In as Admin';
+            $this -> load -> view('log_in', $data);
+		}
+	}
+
+	public function addTransfer(){
+		session_start();
+		if(isset($_SESSION['admin'])){
+			$this->load->view('addTransfer');
+		}
+		else{
+			$data['err'] = 'Please Log In as Admin';
+            $this -> load -> view('log_in', $data);
+		}
+	}
+
+	public function addAdmin(){
+		session_start();
+		if(isset($_SESSION['admin'])){
+			$this->load->view('addNewAdmin');
+		}
+		else{
+			$data['err'] = 'Please Log In as Admin';
+            $this -> load -> view('log_in', $data);
+		}
+	}
+
+	public function logOut(){
+		session_start();
+
+        $this -> load -> helper('url');
+        $_SESSION = array();
+
+        session_destroy();
+        redirect();
 	}
 
 	//add marist course

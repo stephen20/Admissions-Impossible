@@ -16,11 +16,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
-    <link rel="stylesheet" type="text/css" href="css/customStyles.css">
-    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="CSS/customStyles.css">
+    <link href="CSS/simple-sidebar.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -43,7 +43,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a id="navHomeBtn" ">Home</a></li>
+                <li><a id="navHomeBtn">Home</a></li>
             </ul>
         </div>
     </div>
@@ -69,14 +69,27 @@
                 <li>
                     <a id="logOut">Log Out</a>
                 </li>
+                <a id="seal">
+                    <img id="blackseal" src="SealBlack.jpg">
+                </a>
             </ul>
         </div>
     </div>
 </nav>
 
 <body>
-<p style="align-content: center" id="courseComparisonContent">Please Use the Navigation on the Left to Direct You To Your Next Page</p>
+<p style="text-align: center; font-size: x-large" id="courseComparisonContent">Welcome To The Student Home Page! </p>
+<p style="text-align: center; font-size: large" id="courseComparisonContent">Please Use The Navigation On The Left For More Available Options!</p>
+<ul style="margin-left: 255px; font-size: large">Below are some Helpful Links!
+    <li> <a href="marist.edu" style="color: red"> Marist Home Page </a></li>
+    <li> <a href="http://www.marist.edu/registrar/catalog/pdfs/undergrad1516/full.pdf" style="color: red"> Marist Full Course Catalog 2015-2016</a></li>
+</ul>
+
 </body>
+<footer id="page-footer">
+    <!--    <h1 style="font-size: xx-large; font-family: 'Bauer Bodoni BT'">MARIST</h1>-->
+    <p>Disclaimer : All information given by this website is not for official use</p>
+</footer>
 </html>
 <script>
 
@@ -110,5 +123,12 @@
         loc = base + "?c=student_profile&m=savedSearches";
         location.href = loc;
     });
+
+    //Log Out
+    $("#logOut").on("click",function(){
+        loc = base;
+        location.href = loc;
+    });
+
 
 </script>

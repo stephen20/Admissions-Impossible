@@ -9,6 +9,7 @@
 class course_comparison extends CI_Controller{
 
     function display(){
+        $this -> load -> helper('url');
         $this->load->view('course_comparison');
     }
 
@@ -25,9 +26,22 @@ class course_comparison extends CI_Controller{
     }
 
     function getMatchedCourse(){
-            $this->load->model('db_model');
-            $result = $this->db_model->getMatchedCourses(($_POST['dept']),($_POST['courseNum']));
-            //$matchedCourses['courses'] = $result;
+        $this->load->model('db_model');
+        $dept = $_POST['dept'];
+        $courseNum = $_POST['courseNum'];
+        $result = $this->db_model->getMatchedCourses($dept,$courseNum);
+    }
+
+    function getMatchingSavedCourses(){
+        $result = [];
+        $this->load->model('db_model');
+        $courses = $_POST['savedCourses'];
+        for($i =0; $i<count($courses); $i++){
+            $dept = $courses[$i]['dept'];
+            $courseNum = $courses[$i]['courseNum'];
+            $result[$i] = $this->db_model->getMatchedSavedCourses($dept,$courseNum);
+        }
+       print_r(json_encode($result));
     }
 
     function getDepartments(){

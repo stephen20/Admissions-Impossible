@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d0af577c-0c06-478c-9611-5624ce2668dc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SealBlack.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SealRed.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/footer.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/addMCourse.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/addNMCourse.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/addTransfer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/addTransfer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/includes/psl-config.php" />
+      <change type="DELETED" beforePath="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\projects\temp\application\controllers\LogIn.php" afterPath="" />
+      <change type="MOVED" beforePath="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\projects\temp\application\controllers\ai.php" afterPath="$PROJECT_DIR$/application/controllers/Ai.php" />
+      <change type="MOVED" beforePath="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\projects\temp\application\controllers\course_comparison.php" afterPath="$PROJECT_DIR$/application/controllers/Course_comparison.php" />
+      <change type="MOVED" beforePath="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\projects\temp\application\controllers\student_profile.php" afterPath="$PROJECT_DIR$/application/controllers/Student_profile.php" />
+      <change type="MOVED" beforePath="C:\Program Files (x86)\EasyPHP-DevServer-14.1VC9\data\localweb\projects\temp\application\models\db_model.php" afterPath="$PROJECT_DIR$/application/models/Db_model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/addNewAdmin.php" afterPath="$PROJECT_DIR$/application/views/addNewAdmin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/adminHome.php" afterPath="$PROJECT_DIR$/application/views/adminHome.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/admin_view.php" afterPath="$PROJECT_DIR$/application/views/admin_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/autoload.php" afterPath="$PROJECT_DIR$/application/config/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/config.php" afterPath="$PROJECT_DIR$/application/config/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/course_comparison.php" afterPath="$PROJECT_DIR$/application/views/course_comparison.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/customStyles.css" afterPath="$PROJECT_DIR$/CSS/customStyles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/database.php" afterPath="$PROJECT_DIR$/application/config/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/includes/db_connect.php" afterPath="$PROJECT_DIR$/application/includes/db_connect.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/editProfile.php" afterPath="$PROJECT_DIR$/application/views/editProfile.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/errors/error.php" afterPath="$PROJECT_DIR$/application/views/errors/error.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/includes/functions.php" afterPath="$PROJECT_DIR$/application/includes/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/index.php" afterPath="$PROJECT_DIR$/application/views/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/log_in.php" afterPath="$PROJECT_DIR$/application/views/log_in.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/login_secure.php" afterPath="$PROJECT_DIR$/application/views/login_secure.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/includes/logout.php" afterPath="$PROJECT_DIR$/application/includes/logout.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/majorCompletion.php" afterPath="$PROJECT_DIR$/application/views/majorCompletion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/navTest.php" afterPath="$PROJECT_DIR$/application/views/navTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/includes/process_login.php" afterPath="$PROJECT_DIR$/application/includes/process_login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/registerStudent.php" afterPath="$PROJECT_DIR$/application/views/registerStudent.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/register_success.php" afterPath="$PROJECT_DIR$/application/views/register_success.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/routes.php" afterPath="$PROJECT_DIR$/application/config/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/savedCourses.php" afterPath="$PROJECT_DIR$/application/views/savedCourses.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/studentHome.php" afterPath="$PROJECT_DIR$/application/views/studentHome.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/student_course_comparison.php" afterPath="$PROJECT_DIR$/application/views/student_course_comparison.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/welcome_message.php" afterPath="$PROJECT_DIR$/application/views/welcome_message.php" />
+    </list>
+    <ignored path="temp.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="temp" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Course_comparison.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/Course_comparison.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Db_model.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/models/Db_model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+              <folding>
+                <element signature="n#getDepartments#0;n#db_model#0;n#!!top" expanded="false" />
+                <element signature="n#getCourseNums#0;n#db_model#0;n#!!top" expanded="false" />
+                <element signature="n#getMatchedCourses#0;n#db_model#0;n#!!top" expanded="false" />
+                <element signature="n#getMatchedSavedCourses#0;n#db_model#0;n#!!top" expanded="false" />
+                <element signature="n#getStudentInfo#0;n#db_model#0;n#!!top" expanded="false" />
+                <element signature="n#createUser#0;n#db_model#0;n#!!top" expanded="false" />
+                <element signature="n#getStudentEmail#0;n#db_model#0;n#!!top" expanded="false" />
+                <element signature="n#getSavedCourses#0;n#db_model#0;n#!!top" expanded="false" />
+                <element signature="n#getMajors#0;n#db_model#0;n#!!top" expanded="false" />
+                <element signature="n#getMajorCourses#0;n#db_model#0;n#!!top" expanded="false" />
+                <element signature="n#checkStudent#0;n#db_model#0;n#!!top" expanded="false" />
+                <marker date="1450137598546" expanded="true" signature="3439:3477" placeholder="Select email..students..." />
+                <marker date="1450137598546" expanded="true" signature="5142:5184" placeholder="SELECT * FRO..users..." />
+                <marker date="1450137598546" expanded="true" signature="5475:5541" placeholder="INSERT INTO ..." />
+                <marker date="1450137598546" expanded="true" signature="5568:5664" placeholder="INSERT INTO ..." />
+                <marker date="1450137598546" expanded="true" signature="5866:5891" placeholder="SELECT * FRO..users..." />
+                <marker date="1450137598546" expanded="true" signature="6353:6398" placeholder="SELECT * FRO..students..." />
+                <marker date="1450137598546" expanded="true" signature="6543:6585" placeholder="SELECT * FRO..admin..." />
+                <marker date="1450137598546" expanded="true" signature="6809:6855" placeholder="DELETE FROM ..." />
+                <marker date="1450137598546" expanded="true" signature="6879:6989" placeholder="UPDATE users..." />
+                <marker date="1450137598546" expanded="true" signature="7016:7114" placeholder="INSERT INTO ..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/application/models/Db_model.php" />
+        <option value="$PROJECT_DIR$/application/views/studentHome.php" />
+        <option value="$PROJECT_DIR$/application/config/config.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="temp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="temp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="temp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="temp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="temp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="temp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="temp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="temp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="temp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0af577c-0c06-478c-9611-5624ce2668dc" name="Default" comment="" />
+      <created>1450137435364</created>
+      <option name="number" value="Default" />
+      <updated>1450137435364</updated>
+      <workItem from="1450137436809" duration="1580000" />
+      <workItem from="1450377054465" duration="586000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2166000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23524962" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/application/controllers/Course_comparison.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Db_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+          <folding>
+            <element signature="n#getDepartments#0;n#db_model#0;n#!!top" expanded="false" />
+            <element signature="n#getCourseNums#0;n#db_model#0;n#!!top" expanded="false" />
+            <element signature="n#getMatchedCourses#0;n#db_model#0;n#!!top" expanded="false" />
+            <element signature="n#getMatchedSavedCourses#0;n#db_model#0;n#!!top" expanded="false" />
+            <element signature="n#getStudentInfo#0;n#db_model#0;n#!!top" expanded="false" />
+            <element signature="n#createUser#0;n#db_model#0;n#!!top" expanded="false" />
+            <element signature="n#getStudentEmail#0;n#db_model#0;n#!!top" expanded="false" />
+            <element signature="n#getSavedCourses#0;n#db_model#0;n#!!top" expanded="false" />
+            <element signature="n#getMajors#0;n#db_model#0;n#!!top" expanded="false" />
+            <element signature="n#getMajorCourses#0;n#db_model#0;n#!!top" expanded="false" />
+            <element signature="n#checkStudent#0;n#db_model#0;n#!!top" expanded="false" />
+            <marker date="1450137598546" expanded="true" signature="3439:3477" placeholder="Select email..students..." />
+            <marker date="1450137598546" expanded="true" signature="5142:5184" placeholder="SELECT * FRO..users..." />
+            <marker date="1450137598546" expanded="true" signature="5475:5541" placeholder="INSERT INTO ..." />
+            <marker date="1450137598546" expanded="true" signature="5568:5664" placeholder="INSERT INTO ..." />
+            <marker date="1450137598546" expanded="true" signature="5866:5891" placeholder="SELECT * FRO..users..." />
+            <marker date="1450137598546" expanded="true" signature="6353:6398" placeholder="SELECT * FRO..students..." />
+            <marker date="1450137598546" expanded="true" signature="6543:6585" placeholder="SELECT * FRO..admin..." />
+            <marker date="1450137598546" expanded="true" signature="6809:6855" placeholder="DELETE FROM ..." />
+            <marker date="1450137598546" expanded="true" signature="6879:6989" placeholder="UPDATE users..." />
+            <marker date="1450137598546" expanded="true" signature="7016:7114" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/student_course_comparison.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/studentHome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Course_comparison.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57781756">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/studentHome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3989266">
+          <caret line="84" column="143" selection-start-line="84" selection-start-column="143" selection-end-line="84" selection-end-column="143" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/student_course_comparison.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Db_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+          <folding>
+            <element signature="n#getDepartments#0;n#db_model#0;n#!!top" expanded="false" />
+            <element signature="n#getCourseNums#0;n#db_model#0;n#!!top" expanded="false" />
+            <element signature="n#getMatchedCourses#0;n#db_model#0;n#!!top" expanded="false" />
+            <element signature="n#getMatchedSavedCourses#0;n#db_model#0;n#!!top" expanded="false" />
+            <element signature="n#getStudentInfo#0;n#db_model#0;n#!!top" expanded="false" />
+            <element signature="n#createUser#0;n#db_model#0;n#!!top" expanded="false" />
+            <element signature="n#getStudentEmail#0;n#db_model#0;n#!!top" expanded="false" />
+            <element signature="n#getSavedCourses#0;n#db_model#0;n#!!top" expanded="false" />
+            <element signature="n#getMajors#0;n#db_model#0;n#!!top" expanded="false" />
+            <element signature="n#getMajorCourses#0;n#db_model#0;n#!!top" expanded="false" />
+            <element signature="n#checkStudent#0;n#db_model#0;n#!!top" expanded="false" />
+            <marker date="1450137598546" expanded="true" signature="3439:3477" placeholder="Select email..students..." />
+            <marker date="1450137598546" expanded="true" signature="5142:5184" placeholder="SELECT * FRO..users..." />
+            <marker date="1450137598546" expanded="true" signature="5475:5541" placeholder="INSERT INTO ..." />
+            <marker date="1450137598546" expanded="true" signature="5568:5664" placeholder="INSERT INTO ..." />
+            <marker date="1450137598546" expanded="true" signature="5866:5891" placeholder="SELECT * FRO..users..." />
+            <marker date="1450137598546" expanded="true" signature="6353:6398" placeholder="SELECT * FRO..students..." />
+            <marker date="1450137598546" expanded="true" signature="6543:6585" placeholder="SELECT * FRO..admin..." />
+            <marker date="1450137598546" expanded="true" signature="6809:6855" placeholder="DELETE FROM ..." />
+            <marker date="1450137598546" expanded="true" signature="6879:6989" placeholder="UPDATE users..." />
+            <marker date="1450137598546" expanded="true" signature="7016:7114" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

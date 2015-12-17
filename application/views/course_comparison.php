@@ -12,10 +12,10 @@
 <head>
     <meta charset = "UTF-8">
     <title>Course Comparison</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
-    <link rel="stylesheet" type="text/css" href="css/customStyles.css">
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="CSS/customStyles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -38,20 +38,16 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><a href="main.html">Home</a></li>
+                <li><a href="<?php echo base_url(); ?>">Home</a></li>
             </ul>
-            <form class="navbar-form navbar-right" role="search">
-                <div class="form-group">
-                    <input align="right" type="text" class="form-control" placeholder="Search" id="new_search">
-                </div>
-                <button align="right" type="submit" class="btn btn-default" id="search-button">Submit</button>
-            </form>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
 <h1><center>Course Comparison</center></h1>
 <div class="input-class">
     <label> Please Select Courses You Wish To Compare To Marist Courses</label>
+    <form method="post">
+        <div> <label> Select School: </label> <select><option value="Dutchess County"> Dutchess County </option></select> </div>
     <table class="table table-striped table-condensed">
         <thead>
             <th>Course Department</th>
@@ -70,7 +66,7 @@
                         echo '</select>';
                         ?>
                     </td>
-                    <td id = matchedMaristCourse1></td>
+                    <td id="matchedMaristCourse1"></td>
                 </tr>
             <tr>
                 <tr>
@@ -83,7 +79,7 @@
                         echo '</select>';
                         ?>
                     </td>
-                    <td id = matchedMaristCourse2></td>
+                    <td id = "matchedMaristCourse2"></td>
                 </tr>
                 <tr>
                 <tr>
@@ -96,7 +92,7 @@
                         echo '</select>';
                         ?>
                     </td>
-                    <td id = matchedMaristCourse3></td>
+                    <td id = "matchedMaristCourse3"></td>
                 </tr>
                 <tr>
                 <tr>
@@ -110,7 +106,7 @@
                         echo '</select>';
                         ?>
                     </td>
-                    <td id = matchedMaristCourse4></td>
+                    <td id = "matchedMaristCourse4"></td>
                 </tr>
                 <tr>
                 <tr>
@@ -124,7 +120,7 @@
                         echo '</select>';
                         ?>
                     </td>
-                    <td id = matchedMaristCourse5></td>
+                    <td id = "matchedMaristCourse5"></td>
                 </tr>
                 <tr>
                 <tr>
@@ -138,7 +134,7 @@
                         echo '</select>';
                         ?>
                     </td>
-                    <td id = matchedMaristCourse6></td>
+                    <td id = "matchedMaristCourse6"></td>
                 </tr>
                 <tr>
                 <tr>
@@ -152,7 +148,7 @@
                         echo '</select>';
                         ?>
                     </td>
-                    <td id = matchedMaristCourse7></td>
+                    <td id = "matchedMaristCourse7"></td>
                 </tr>
                 <tr>
                 <tr>
@@ -165,12 +161,16 @@
                         echo '</select>';
                         ?>
                     </td>
-                    <td id = matchedMaristCourse8></td>
+                    <td id = "matchedMaristCourse8"></td>
                 </tr>
         </tbody>
     </table>
 </div>
 </body>
+<footer id="page-footer">
+    <!--    <h1 style="font-size: xx-large; font-family: 'Bauer Bodoni BT'">MARIST</h1>-->
+    <p>Disclaimer : All information given by this website is not for official use</p>
+</footer>
 </HTML>
 
 <script type="text/javascript">
@@ -206,7 +206,6 @@
                 }
                 $("select#courseNum"+id[1]).html(options);
                 $("#matchedMaristCourse"+id[1]).empty();
-
             }
         );
     });
