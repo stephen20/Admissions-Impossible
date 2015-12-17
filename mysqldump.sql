@@ -162,7 +162,7 @@ DROP TABLE IF EXISTS `marist_courses`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `marist_courses` (
-  `mId` int(11) NOT NULL,
+  `mId` int(11) NOT NULL AUTO_INCREMENT,
   `department` varchar(255) DEFAULT NULL,
   `course_num` varchar(255) DEFAULT NULL,
   `course_name` varchar(255) DEFAULT NULL,
@@ -218,7 +218,7 @@ DROP TABLE IF EXISTS `school_courses`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `school_courses` (
-  `cId` int(11) NOT NULL,
+  `cId` int(11) NOT NULL AUTO_INCREMENT,
   `school_id` int(11) DEFAULT NULL,
   `department` varchar(255) DEFAULT NULL,
   `course_num` varchar(255) DEFAULT NULL,
